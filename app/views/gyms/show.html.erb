@@ -1,0 +1,43 @@
+<p>
+  <b>Name:</b>
+  <%=h @gym.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @gym.description %>
+</p>
+
+<p>
+  <b>Address first line:</b>
+  <%=h @gym.address_first_line %>
+</p>
+
+<p>
+  <b>Address second line:</b>
+  <%=h @gym.address_second_line %>
+</p>
+
+<p>
+  <b>Town:</b>
+  <%=h @gym.town %>
+</p>
+
+<p>
+  <b>Postcode:</b>
+  <%=h @gym.postcode %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%=h @gym.phone %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @gym.email %>
+</p>
+
+
+<%= link_to 'Edit', edit_gym_path(@gym) %> |
+<%= link_to 'Back', gyms_path %>

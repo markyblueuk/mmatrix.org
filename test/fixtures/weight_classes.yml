@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  weight_from: 
+  weight_to: 
+
+two:
+  name: MyString
+  weight_from: 
+  weight_to: 

@@ -1,0 +1,30 @@
+<h1>Listing bouts</h1>
+
+<table>
+  <tr>
+    <th>Bout</th>
+    <th>Fighter1</th>
+    <th>Fighter2</th>
+    <th>Referee</th>
+    <th>Event</th>
+    <th>Date</th>
+  </tr>
+
+<% @bouts.each do |bout| %>
+  <tr>
+    <td><%=h bout.bout_id %></td>
+    <td><%=h bout.fighter1 %></td>
+    <td><%=h bout.fighter2 %></td>
+    <td><%=h bout.referee %></td>
+    <td><%=h bout.event_id %></td>
+    <td><%=h bout.date %></td>
+    <td><%= link_to 'Show', bout %></td>
+    <td><%= link_to 'Edit', edit_bout_path(bout) %></td>
+    <td><%= link_to 'Destroy', bout, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New bout', new_bout_path %>

@@ -1,0 +1,33 @@
+<p>
+  <b>Bout:</b>
+  <%=h @bout.bout_id %>
+</p>
+
+<p>
+  <b>Fighter1:</b>
+  <%=h @bout.fighter1 %>
+</p>
+
+<p>
+  <b>Fighter2:</b>
+  <%=h @bout.fighter2 %>
+</p>
+
+<p>
+  <b>Referee:</b>
+  <%=h @bout.referee %>
+</p>
+
+<p>
+  <b>Event:</b>
+  <%=h @bout.event_id %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%=h @bout.date %>
+</p>
+
+
+<%= link_to 'Edit', edit_bout_path(@bout) %> |
+<%= link_to 'Back', bouts_path %>

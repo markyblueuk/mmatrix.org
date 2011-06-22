@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  event_id: 
+  name: MyString
+  description: MyString
+  date: 2011-03-24
+  address_first_line: MyString
+  address_second_line: MyString
+  town: MyString
+  postcode: MyString
+  phone: MyString
+  email: MyString
+  url: MyString
+
+two:
+  event_id: 
+  name: MyString
+  description: MyString
+  date: 2011-03-24
+  address_first_line: MyString
+  address_second_line: MyString
+  town: MyString
+  postcode: MyString
+  phone: MyString
+  email: MyString
+  url: MyString

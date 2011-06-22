@@ -1,0 +1,34 @@
+<h1>Listing gyms</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Address first line</th>
+    <th>Address second line</th>
+    <th>Town</th>
+    <th>Postcode</th>
+    <th>Phone</th>
+    <th>Email</th>
+  </tr>
+
+<% @gyms.each do |gym| %>
+  <tr>
+    <td><%=h gym.name %></td>
+    <td><%=h gym.description %></td>
+    <td><%=h gym.address_first_line %></td>
+    <td><%=h gym.address_second_line %></td>
+    <td><%=h gym.town %></td>
+    <td><%=h gym.postcode %></td>
+    <td><%=h gym.phone %></td>
+    <td><%=h gym.email %></td>
+    <td><%= link_to 'Show', gym %></td>
+    <td><%= link_to 'Edit', edit_gym_path(gym) %></td>
+    <td><%= link_to 'Destroy', gym, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New gym', new_gym_path %>

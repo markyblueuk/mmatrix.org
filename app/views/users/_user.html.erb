@@ -1,0 +1,29 @@
+<div id='user'>
+
+  <h2><%= @user.title.to_s + " " + @user.firstname + " " + @user.lastname %></h2>
+  <div id='user_image'>
+    <img src='/images/default_user.gif' width='200px' height='200px'>
+  </div>
+
+  <div id='user_personal_details'>
+  	<h3>Login Name</h3>
+  	<%= @user.username %><br>
+	
+	<h3>Email</h3>
+    <%= @user.email %><br>
+
+    <h3>Addresss</h3>
+	<%= @user.address_first_line%><br>
+	<%= @user.address_second_line %><br>
+	<%= @user.address_town %><br>
+	<%= @user.address_postcode %><br>
+
+	<h3>Contact</h3>
+    <%= @user.phone_mobile %>
+  </div>
+
+  <div id='model_links'>
+  	<%= link_to 'Edit', edit_user_path(@user) %> |
+	<%= link_to 'Back', users_path %>
+  </div>
+</div>

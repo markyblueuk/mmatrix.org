@@ -1,0 +1,24 @@
+<h1>Editing weight_class</h1>
+
+<% form_for(@weight_class) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :weight_from %><br />
+    <%= f.text_field :weight_from %>
+  </p>
+  <p>
+    <%= f.label :weight_to %><br />
+    <%= f.text_field :weight_to %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @weight_class %> |
+<%= link_to 'Back', weight_classes_path %>

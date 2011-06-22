@@ -1,0 +1,36 @@
+<h1>Editing bout</h1>
+
+<% form_for(@bout) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :bout_id %><br />
+    <%= f.text_field :bout_id %>
+  </p>
+  <p>
+    <%= f.label :fighter1 %><br />
+    <%= f.text_field :fighter1 %>
+  </p>
+  <p>
+    <%= f.label :fighter2 %><br />
+    <%= f.text_field :fighter2 %>
+  </p>
+  <p>
+    <%= f.label :referee %><br />
+    <%= f.text_field :referee %>
+  </p>
+  <p>
+    <%= f.label :event_id %><br />
+    <%= f.text_field :event_id %>
+  </p>
+  <p>
+    <%= f.label :date %><br />
+    <%= f.date_select :date %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @bout %> |
+<%= link_to 'Back', bouts_path %>

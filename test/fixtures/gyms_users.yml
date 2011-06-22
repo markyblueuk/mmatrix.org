@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  gym_id: 
+  user_id: 
+  membership_type: MyString
+
+two:
+  gym_id: 
+  user_id: 
+  membership_type: MyString

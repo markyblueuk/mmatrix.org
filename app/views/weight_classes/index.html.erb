@@ -1,0 +1,24 @@
+<h1>Listing weight_classes</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Weight from</th>
+    <th>Weight to</th>
+  </tr>
+
+<% @weight_classes.each do |weight_class| %>
+  <tr>
+    <td><%=h weight_class.name %></td>
+    <td><%=h weight_class.weight_from %></td>
+    <td><%=h weight_class.weight_to %></td>
+    <td><%= link_to 'Show', weight_class %></td>
+    <td><%= link_to 'Edit', edit_weight_class_path(weight_class) %></td>
+    <td><%= link_to 'Destroy', weight_class, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New weight_class', new_weight_class_path %>

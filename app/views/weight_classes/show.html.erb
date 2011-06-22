@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @weight_class.name %>
+</p>
+
+<p>
+  <b>Weight from:</b>
+  <%=h @weight_class.weight_from %>
+</p>
+
+<p>
+  <b>Weight to:</b>
+  <%=h @weight_class.weight_to %>
+</p>
+
+
+<%= link_to 'Edit', edit_weight_class_path(@weight_class) %> |
+<%= link_to 'Back', weight_classes_path %>

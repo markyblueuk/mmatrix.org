@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  bout_id: 
+  fighter1: 
+  fighter2: 
+  referee: 
+  event_id: 
+  date: 2011-03-24
+
+two:
+  bout_id: 
+  fighter1: 
+  fighter2: 
+  referee: 
+  event_id: 
+  date: 2011-03-24

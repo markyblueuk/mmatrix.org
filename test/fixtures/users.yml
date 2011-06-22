@@ -1,0 +1,31 @@
+one:
+  username: MyString
+  email: MyString
+  password: MyString
+  firstname: MyString
+  lastname: MyString
+  address_first_line: MyString
+  address_second_line: MyString
+  address_town: MyString
+  address_postcode: MyString
+  phone_mobile: MyString
+  phone_landline: MyString
+  account_type: MyString
+  status: MyString
+  range: 1
+
+two:
+  username: MyString
+  email: MyString
+  password: MyString
+  firstname: MyString
+  lastname: MyString
+  address_first_line: MyString
+  address_second_line: MyString
+  address_town: MyString
+  address_postcode: MyString
+  phone_mobile: MyString
+  phone_landline: MyString
+  account_type: MyString
+  status: MyString
+  range: 1
